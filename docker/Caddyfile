@@ -1,0 +1,6 @@
+
+http://{$DOMAIN_NAME} {
+  proxy / web:{$FLASK_PORT} {
+      transparent
+  }
+}

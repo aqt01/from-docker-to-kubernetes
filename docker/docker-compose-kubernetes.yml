@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  web:
+    build: .
+    image: aqt01/flask   
+    expose:
+      - "5000"
+    networks:
+      - "flask"
+    command: python ./app.py
+
+
+networks:
+  "flask":
